@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>HTML for To-Do Page</description>
+        <direct>false</direct>
+        <endpoint>x_484663_full_stac_todo.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+	<script src="x_484663_full_stac.todo_client_logic.jsdbx"></script>
+	
+	<div ng-app="angularapp" ng-controller="AngularAppCtrl as appctrl">
+		<input type="text" ng-model="myVar" placeholder="Enter some text here"></input>
+		<div class="jumbotron">
+			<h1 class="display-3">Hello World!</h1>
+			<hr class="m-y-2" />
+			<p>{{myVar}}</p>
+		</div>
+		<button ng-click="clearTxt()" type="button" class="btn btn-primary">Clear Text</button>
+	</div>
+	
+</j:jelly>]]></html>
+        <name>todo</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-16 14:35:25</sys_created_on>
+        <sys_id>295b6273db191010a56129e1ca96196f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>todo</sys_name>
+        <sys_package display_value="Full Stack App" source="x_484663_full_stac">5e3baa33db191010a56129e1ca9619ce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Full Stack App">5e3baa33db191010a56129e1ca9619ce</sys_scope>
+        <sys_update_name>sys_ui_page_295b6273db191010a56129e1ca96196f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-16 15:11:37</sys_updated_on>
+    </sys_ui_page>
+</record_update>

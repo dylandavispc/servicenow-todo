@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>client-side logic for the todo list application</description>
+        <global>false</global>
+        <name>x_484663_full_stac.todo_client_logic</name>
+        <script><![CDATA[angular.module('angularapp', []);
+angular.module('angularapp').controller('AngularAppCtrl', function($scope) {
+	$scope.myVar = '';
+	$scope.i = 0;
+	
+	$scope.clearTxt = function() {
+		$scope.myVar = '';
+		$scope.i++;
+		alert("The myVar value was cleared " + $scope.i + " times by "+ g_user.userName + ".");
+	};
+});]]></script>
+        <script_name>todo_client_logic</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-16 14:55:29</sys_created_on>
+        <sys_id>d86f6af3db191010a56129e1ca96190a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_484663_full_stac.todo_client_logic</sys_name>
+        <sys_package display_value="Full Stack App" source="x_484663_full_stac">5e3baa33db191010a56129e1ca9619ce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Full Stack App">5e3baa33db191010a56129e1ca9619ce</sys_scope>
+        <sys_update_name>sys_ui_script_d86f6af3db191010a56129e1ca96190a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-16 15:12:35</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>
